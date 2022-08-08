@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="./Login.css" />
+  </head>
+  <body>
+    <section class="login-section">
+      <img src="./doctor_img.webp" class="form-img" alt="img" />
+      <form>
+        <h1>Login</h1>
+        <p class="welcome-head">Welcome to Our Vaccine Collection System.</p>
+        <p class="email-head">Email Address</p>
+        <input
+          type="text"
+          id="email-field"
+          class="form-field"
+          placeholder="username@example.com"
+          name="email"
+          
+        />
+        <p class="password-head">Password</p>
+        <input
+          type="password"
+          id="password-field"
+          class="form-field"
+          placeholder="password"
+          name="password"
+        />
+        <input type="checkbox" id="Remember" />
+        <label for="Remember" class="remember-me">Remember Me?</label>
+        <button type="submit" id="login-btn" class="login-btn">Login</button>
+        <p class="forgot"><a href="#">Forgot Your Password?</a></p>
+      </form>
+    </section>
+    <script src="./Login.js"></script>
+  </body>
+</html>
