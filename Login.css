@@ -33,6 +33,7 @@ form{
     margin-left:30px;
 }
 .form-field{
+    border: 2px solid black;
     border-radius: 10px 10px;
     margin-bottom:20px;
     padding:10px;
