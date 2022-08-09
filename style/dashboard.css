@@ -1,0 +1,9 @@
+.nav .nav-item .active{
+    background-color: #AF88FC;
+}
+.nav .nav-item .nav-link:hover{
+    background-color: #AF88FC;
+}
+body{
+    overflow-x: hidden;
+}
