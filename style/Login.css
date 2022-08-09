@@ -8,7 +8,10 @@
   font-weight: bold;
 }
 body {
-  background-color: #d2d2d2;
+  /* background-color: #d2d2d2; */
+  background-image: radial-gradient(#af88fc 2.5px, transparent 2.5px);
+  background-size: 43px 43px;
+  background-color: #eef2f2;
 }
 .login-section {
   display: flex;
@@ -17,13 +20,13 @@ body {
   justify-content: center;
   background-color: white;
   width: 900px;
-  position: relative;
-  transform: translateX(-50%);
+  position: absolute;
   left: 50%;
-  top: 90px;
-  height: 600px;
-  /* added border radius */
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 input {
   flex-grow: 1;
@@ -76,6 +79,9 @@ form h1 {
 input[type="checkbox"] {
   width: 30px;
   transform: scale(1.5);
+}
+input[type="checkbox"]:checked{
+    accent-color: #af88fc;
 }
 .email-head {
   position: relative;
