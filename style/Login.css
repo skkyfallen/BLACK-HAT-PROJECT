@@ -43,6 +43,10 @@ form {
   padding: 10px;
   /* margin-top:20px */
 }
+.form-field:focus::placeholder{
+  transition:0.3s;
+  opacity:0;
+}
 .form-img {
   /* added object fit */
   object-fit: cover;
