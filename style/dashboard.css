@@ -1,15 +1,27 @@
-.nav .nav-item .active {
-  background-color: #af88fc;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('http://fonts.cdnfonts.com/css/recoleta');
+*{
+  font-family: 'Poppins', sans-serif;
 }
-.nav .nav-item .nav-link:hover {
-  background-color: #af88fc;
+.nav li .active-page{
+  background-color: white;
+  color: #423e77;
 }
-body {
-  overflow-x: hidden;
+.nav li a{
+  color: white;
 }
-
-* {
-  /* outline: 2px solid limegreen; */
+.nav li a:hover{
+  background-color: white;
+  color: blueviolet;
+}
+.myNav{
+  border-top-right-radius: 40px;
+}
+.btn-purple{
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
 
 .main-section {
@@ -64,4 +76,53 @@ input[type="checkbox"] {
 }
 input[type="checkbox"]:checked {
   accent-color: #af88fc;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blueviolet;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#main {
+  display: none;
+}
+#main-patient{
+  display: none;
 }
