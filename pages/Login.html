@@ -12,24 +12,26 @@
   <body>
     <section class="login-section">
       <img src="../images/doctor_img.webp" class="form-img" alt="img" />
-      <form action="dashboard.html">
+      <form action="dashboard.html" id="login">
         <h1>Login</h1>
         <p class="welcome-head">Welcome to Our Vaccine Administering System.</p>
         <p class="email-head">Email Address</p>
         <input
           type="text"
-          id="email-field"
+          id="email"
           class="form-field"
           placeholder="username@example.com"
           name="email"
+          required
         />
         <p class="password-head">Password</p>
         <input
           type="password"
-          id="password-field"
+          id="password"
           class="form-field"
           placeholder="password"
           name="password"
+          required
         />
         <input type="checkbox" id="Remember" />
         <label for="Remember" class="remember-me">Remember Me</label>
@@ -38,5 +40,6 @@
       </form>
     </section>
     <script src="../script/Login.js"></script>
+    <!-- <script src="../script/formValidation.js"></script> -->
   </body>
 </html>

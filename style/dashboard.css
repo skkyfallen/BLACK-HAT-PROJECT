@@ -126,3 +126,33 @@ input[type="checkbox"]:checked {
 #main-patient{
   display: none;
 }
+.loader-text{
+  position: absolute;
+  left: 49%;
+  top: 60%;
+  font-size: 19px;
+  transform: translateX(-49%);
+}
+
+.result-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.result-card{
+  background-image: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+  rgba(14, 30, 37, 0.16) 0px 2px 16px 0px;
+  border-radius: 10px;
+  min-height: 300px;
+  min-width: 600px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.details{
+  align-items: center;
+  display: flex;
+}
